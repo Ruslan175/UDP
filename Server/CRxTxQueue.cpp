@@ -5,7 +5,7 @@
 
 
 #define SERVER_PROTVERSION     10u
-#define _LOCK                  std::unique_lock<std::mutex>  lock(mxLocker);
+#define _LOCK                  std::lock_guard<std::mutex>  lock(mxLocker);
 
 
 CRxTxQueue::CRxTxQueue()
