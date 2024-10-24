@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+rm client
+rm client_2
+
+g++ -std=c++11 -Wall client.c CClient.cpp ../CVariant.cpp -o client
+g++ -std=c++11 -Wall client_2.c CClient.cpp ../CVariant.cpp -o client_2
+
+./client &
+./client_2 &
+

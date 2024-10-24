@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+rm server
+g++ -std=c++11 -Wall server.c CListener.cpp CRxTxQueue.cpp ../CVariant.cpp -o server
+./server
